@@ -90,7 +90,7 @@ header a{
 /* *** BANER SECTION *** */
 
 .baner-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/background.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background.png");
     background-position: center 90%;
     background-size: cover;
     height: 550px;
@@ -125,6 +125,7 @@ header a{
     border: none;
     border-radius: 40px;
     padding: 20px 40px;
+    font-weight: 500;
 }
 
 
@@ -209,11 +210,84 @@ header a{
     opacity: 0.55;
 }
 
+/* *** RELAX SECTION *** */
+.relax-section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.relax-container-img{
+    background-image: url(../images/background-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 
+.relax-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background-2.png");
+    background-position: center 90%;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 80px 100px;
+}
 
+.relax-container h2{
+    font-size: 36px;
+    text-transform: uppercase; 
+    text-align: left;
+    font-weight: 700;
+    line-height: 50px;
+}
+.relax-container span{
+    color: #7ec479;
+}
+.relax-container p, ul{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.relax-container ul{
 
+}
+.relax-container li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.relax-container li::before{
+    content: url("../images/check-icon.png");
+    padding: 5px 10px;
+    display: inline-block;
+    transform: scale(1);
+}
+/*.relax-container li::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("../images/check-icon.png") no-repeat;
+    background-position: center;
+    background-size: auto 20px;
+}*/
 
-
+.relax-section button{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase; 
+    background-color: #7ec479;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    margin: 20px;
+    font-weight: 500;
+}
 
 
 
