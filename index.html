@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Treehouse</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
@@ -18,20 +19,20 @@
 			</a>
 		</div>
 		<nav>
-			<li><a href="#">home</a></li>
-			<li><a href="#">about</a></li>
-			<li><a href="#">blog</a></li>
-			<li><a href="#">portfolio</a></li>
-			<li><a href="#">contact</a></li>
+			<li><a href="#home">home</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#blog">blog</a></li>
+			<li><a href="#portfolio">portfolio</a></li>
+			<li><a href="#contact">contact</a></li>
 		</nav>
 	</header>
 	<main>
-		<section class="baner-section">
+		<section class="baner-section" id="home">
 			<h1>creative digital <br> solutions</h1>
 			<p>Proin iaculis purus consequat sem cure.</p>
-			<button>view portfolio</button>
+			<button class="btn">view portfolio</button>
 		</section>
-		<section class="services-section">
+		<section class="services-section sect-grid" id="about">
 			<hgroup>
 				<h2>proffesional services</h2>
 				<p>Proin iaculis purus consequat sem cure</p>
@@ -53,7 +54,7 @@
 				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 			</div>
 		</section>
-		<section class="relax-section">
+		<section class="relax-section" id="blog">
 			<div class="relax-container-img"></div>
 			<div class="relax-container">
 				<h2>just relax <span>&</span> <br>let us do the heavy lifting</h2>
@@ -63,10 +64,10 @@
 					<li>Regular Updates</li>
 					<li>Round The Clock Support</li>
 				</ul>
-				<button>learn more</button>
+				<button class="btn">learn more</button>
 			</div>
 		</section>
-		<section class="project-section">
+		<section class="project-section" id="portfolio">
 			<hgroup>
 				<h2>latest project</h2>
 				<p>Proin iaculis purus consequat sem cure</p>
@@ -108,7 +109,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="culture-section">
+		<section class="culture-section sect-grid">
 			<hgroup>
 				<h2>culture & values</h2>
 				<p>Proin iaculis purus consequat cure.</p>
@@ -137,7 +138,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="clients-section">
+		<section class="clients-section sect-grid">
 			<hgroup>
 				<h2>our awesome clients</h2>
 				<p>Proin iaculis purus consequat cure.</p>
@@ -159,7 +160,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="next-project-section">
+		<section class="next-project-section" id="contact">
 			<h2>ready to talk about your next project?</h2>
 			<button>contact us</button>
 		</section>
@@ -170,7 +171,7 @@
 			<img src="images/logo-mic.png">
 		</section>
 	</main>
-	<section class="footer-section">
+	<section class="footer-section sect-grid">
 		<div class="contact-container">
 			<h3>contact us</h3>
 			<li>
@@ -232,10 +233,10 @@
 				<div class="tweets-item">				
 					<a href="#">Grab the Free Treehouse web template at FreebiesXpress!</a>
 					<div class="tweets-ht">
-						<a href="/hashtag/freebies?src=hash" target="_blank">
+						<a href="https://twitter.com/hashtag/freebies?src=hash" target="_blank">
 							<s>#</s><b><strong>freebies</strong></b>
 						</a>
-						<a href="/hashtag/templates?src=hash" target="_blank">
+						<a href="https://twitter.com/hashtag/templates?src=hash" target="_blank">
 							<s>#</s><b><strong>templates</strong></b>
 						</a>
 					</div>
@@ -244,7 +245,7 @@
 			</li>		
 		</nav>
 	</section>
-	<footer>
+	<footer class="sect-grid">
 		<p class="copyright-container">
 			&copy; Copywright 2014 FreebiesXpress.com
 		</p>
