@@ -812,6 +812,11 @@ footer .social-container a:hover {
 }
 
 
+
+/* ***  MEDIA QUERIES #1 *** */
+
+
+
 @media screen and (max-width: 1200px) {
 
     /* *** GRID *** */
@@ -839,6 +844,11 @@ footer .social-container a:hover {
         -ms-grid-rows: 33% 67%;
             grid-template-rows: 33% 67%; 
     }
+    .culture-item:not(:last-of-type)::after{
+        width: 15vw;
+        left: 70%;
+        top: 20%;
+        }
     .clients-section{
         height: 725px;
         display: -ms-grid;
@@ -896,6 +906,12 @@ footer .social-container a:hover {
 
 }
 
+
+
+/* ***  MEDIA QUERIES #2 *** */
+
+
+
 @media screen and (max-width: 768px) {
     .sect-grid{
         -ms-grid-columns: auto 32% 32% 32% auto;
@@ -922,6 +938,11 @@ footer .social-container a:hover {
         background: none;    
         height: 750px;
 
+    }
+    .culture-item:not(:last-of-type)::after{
+        width: 15vw;
+        left: 75%;
+        top: 20%;
     }
     .clients-section{
         height: 700px;
@@ -992,6 +1013,212 @@ footer .social-container a:hover {
         -ms-flex-order: -1;
             order: -1;
     }
+}
+
+
+
+/* ***  MEDIA QUERIES #3 *** */
+
+/* *** MOBILE *** */
+
+
+@media screen and (max-width: 640px) {
+    .sect-grid{
+        -ms-grid-columns: auto 33% 33% 33% auto;
+            grid-template-columns: auto 33% 33% 33% auto; 
+    }
+    header{
+        height: 60px;
+        padding: 10px;
+    }
+    .baner-section {
+        height: auto;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .baner-section h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 10px;
+    }
+    .baner-section p{
+        text-align: center;
+        padding: 10px;
+    }
+    .btn{
+        margin: 10px;
+        padding: 15px 35px;
+        font-size: .8rem;
+    }
+    section{
+        height: auto !important;
+    }
+    .services-section h2, .relax-container h2, .project-section h2, .culture-section h2, .clients-section h2, .next-project-section h2{
+        font-size: 1.8rem;
+        padding: 10px;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+                line-height: 2.3rem;
+    }
+    .services-section hgroup p, .relax-container hgroup p, .project-section hgroup p, .culture-section hgroup p, .clients-section hgroup p, .next-project-section hgroup p{
+        font-size: 1.1rem;
+        padding: 10px;
+        text-align: center;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+    }
+    .services-section hgroup, .relax-container hgroup, .project-section hgroup, .culture-section hgroup, .clients-section hgroup, .next-project-section hgroup{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        padding: 10px;
+        line-height: 2rem;
+    }
+    .services-section, .relax-container, .project-section, .culture-section, .clients-section, .next-project-section{
+        padding: 10px 0px;
+    }
+    .services-container{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-align: center;
+            align-items: center;
+        padding: 10px;
+    }
+    .services-item{
+        height: 200px;
+        padding: 10px 0px;
+    }
+    .relax-container{
+        min-height: 600px;
+    }  
+    .relax-container hgroup{
+        padding: 10px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    }    
+    .relax-container h2, .relax-container p{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        padding: 10px;
+        /*height: 400px;*/
+    }
+    .relax-section button, .btn{
+        margin: 20px;
+    }
+    .project-container{
+        -ms-flex-align: center;
+            align-items: center;
+    }
+    .project-content, .project-item, .project-item-hp{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    .project-container > h3, .project-container >p, .project-item-hp h3{
+        padding: 10px;
+        text-align: center;
+    }
+    .project-item-img{
+        margin: 10px;
+    }
+    .project-item + p{
+        margin: 10px;
+    }
+    .project-container button{
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        margin-bottom: 10px; 
+    }
+    .culture-container{
+        -ms-flex-direction: column;
+            flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .culture-item{
+        padding: 10px;
+        margin: 0px;
+    }
+    .culture-item:not(:last-of-type)::after{
+        display: none;
+    }
+    .clients-item{
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }    
+    .clients-item img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .clients-item .cli-1::before{
+        display: none;
+    }
+    .clients-opinion{
+        /*margin: 10px;*/
+        /*padding: 10px;*/
+        line-height: 25px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        text-align: center;
+    }
+    .clients-item .cli-2{  
+        -ms-flex-order: 1;  
+            order: 1; 
+    }
+    .next-project-section{
+        padding: 10px;
+    }
+    .next-project-section button, .websites-section{
+        margin: 10px;
+    }
+    footer .social-container a{
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 
