@@ -1,5 +1,13 @@
 *{ box-sizing: border-box; }
 
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    }
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -787,6 +795,7 @@ footer .social-container a:hover {
 
 
 @media screen and (max-width: 768px) {
+
     .sect-grid{
         grid-template-columns: auto 32% 32% 32% auto; 
     }
