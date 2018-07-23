@@ -11,253 +11,259 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
-<body>
-	<header class="sect-grid">
-		<div class="logo-container">
-			<a href="#" class="logo">
-				<img src="images/logo-img.png">
-				<span>treehouse</span>
-			</a>
-		</div>
-		<nav>
-			<li><a href="#home">home</a></li>
-			<li><a href="#about">about</a></li>
-			<li><a href="#blog">blog</a></li>
-			<li><a href="#portfolio">portfolio</a></li>
-			<li><a href="#contact">contact</a></li>
-		</nav>
-	</header>
-	<main>
-		<section class="baner-section" id="home">
-			<h1>creative digital <br> solutions</h1>
-			<p>Proin iaculis purus consequat sem cure.</p>
-			<button class="btn">view portfolio</button>
-		</section>
-		<section class="services-section sect-grid" id="about">
-			<hgroup>
-				<h2>proffesional services</h2>
-				<p>Proin iaculis purus consequat sem cure</p>
-			</hgroup>
-			<div class="services-container">
-			<div class="services-item">
-				<img src="images/icon-heart.png">
-				<h3>beautiful designs</h3>
-				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+<body onscroll="fixedNav(), toTop()">
+	<!-- window.pageYOffset is always 0 with overflow-x: hidden on body, html-->
+	<div class="body-content">
+		<header id="navbar">
+			<div class="logo-container">
+				<a href="#" class="logo">
+					<img src="images/logo-img.png">
+					<span>treehouse</span>
+				</a>
 			</div>
-			<div class="services-item">
-				<img src="images/icon-mobile.png">
-				<h3>responsive web</h3>
-				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-			</div>
-			<div class="services-item">
-				<img src="images/icon-graph.png">
-				<h3>marketing tools</h3>
-				<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-			</div>
-		</section>
-		<section class="relax-section" id="blog">
-			<div class="relax-container-img"></div>
-			<div class="relax-container">
+			<nav>
+				<li><a href="#<!-- home -->" id="navHome">home</a></li>
+				<li><a href="#<!-- about -->" id="navAbout">about</a></li>
+				<li><a href="#<!-- blog -->" id="navBlog">blog</a></li>
+				<li><a href="#<!-- portfolio -->" id="navPortfolio">portfolio</a></li>
+				<li><a href="#<!-- contact -->" id="navContact">contact</a></li>
+			</nav>
+		</header>
+		<main>
+			<section class="baner-section" id="home">
+				<h1>creative digital <br> solutions</h1>
+				<p>Proin iaculis purus consequat sem cure.</p>
+				<button class="btn">view portfolio</button>
+			</section>
+			<section class="services-section sect-grid" id="about">
 				<hgroup>
-					<h2>just relax <span>&</span> <br>let us do the heavy lifting</h2>
-					<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+					<h2>proffesional services</h2>
+					<p>Proin iaculis purus consequat sem cure</p>
 				</hgroup>
-				<ul>
-					<li>Initial Setup & Customizations</li>
-					<li>Regular Updates</li>
-					<li>Round The Clock Support</li>
-				</ul>
-				<button class="btn">learn more</button>
-			</div>
-		</section>
-		<section class="project-section" id="portfolio">
-			<hgroup>
-				<h2>latest project</h2>
-				<p>Proin iaculis purus consequat sem cure</p>
-			</hgroup>
-			<div class="project-content">
-				<div class="project-container">
-					<h3>developing a framework</h3>
-					<p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-					<div class="project-item">
-						<div class="project-item-img">
-							<img src="images/p-icon-bascet.png">
-						</div>
-						<div class="project-item-hp">
-							<h3>E-Commerce Ready</h3>
-							<p>Proin iaculis purus consequat sem cure digni ssim.</p>
-						</div>
-					</div>
-					<div class="project-item">
-						<div class="project-item-img">
-							<img src="images/p-icon-laptop.png">
-						</div>
-						<div class="project-item-hp">
-							<h3>Powerful SEO Features</h3>
-							<p>Proin iaculis purus consequat sem cure.</p>	
-						</div>			
-					</div>
-					<div class="project-item">
-						<div class="project-item-img">
-							<img src="images/p-icon-locked.png">
-						</div>
-						<div class="project-item-hp">
-							<h3>Secure Encryption</h3>
-							<p>Proin iaculis purus consequat sem cure iaculis purus.</p>
-						</div>
-					</div>
-					<p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
-					<button>view details <i class="fas fa-arrow-right"></i>
-					</button>
-				</div>
-			</div>
-		</section>
-		<section class="culture-section sect-grid">
-			<hgroup>
-				<h2>culture & values</h2>
-				<p>Proin iaculis purus consequat cure.</p>
-			</hgroup>
-			<div class="culture-container">
-				<div class="culture-item">
-					<div class="culture-item-img">
-						<img src="images/icon-music.png">
-					</div>	
-					<h3>work-life balance</h3>
+				<div class="services-container">
+				<div class="services-item">
+					<img src="images/icon-heart.png">
+					<h3>beautiful designs</h3>
 					<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
-				<div class="culture-item">
-					<div class="culture-item-img">
-						<img src="images/icon2-graph.png">
-					</div>	
-					<h3>quality over quantity</h3>
+				<div class="services-item">
+					<img src="images/icon-mobile.png">
+					<h3>responsive web</h3>
 					<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
-				<div class="culture-item">
-					<div class="culture-item-img">
-						<img src="images/icon2-star.png">
-					</div>	
-					<h3>deliver excellence</h3>
+				<div class="services-item">
+					<img src="images/icon-graph.png">
+					<h3>marketing tools</h3>
 					<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
 				</div>
-			</div>
-		</section>
-		<section class="clients-section sect-grid">
-			<hgroup>
-				<h2>our awesome clients</h2>
-				<p>Proin iaculis purus consequat cure.</p>
-			</hgroup>
-			<div class="clients-container">			
-				<div class="clients-item">
-					<img src="images/client-1.jpeg">
-					<blockquote class="clients-opinion cli-1">
-						<p>" Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus. "</p>
-						<p class="cli-name">- Jamie Richardson, Founder of Cocoa Media</p>
-					</blockquote>
+			</section>
+			<section class="relax-section" id="blog">
+				<div class="relax-container-img"></div>
+				<div class="relax-container">
+					<hgroup>
+						<h2>just relax <span>&</span> <br>let us do the heavy lifting</h2>
+						<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+					</hgroup>
+					<ul>
+						<li>Initial Setup & Customizations</li>
+						<li>Regular Updates</li>
+						<li>Round The Clock Support</li>
+					</ul>
+					<button class="btn">learn more</button>
 				</div>
-				<div class="clients-item">
-					<blockquote class="clients-opinion cli-2">
-						<p>" Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus. "</p>
-						<p class="cli-name">- Kim Thompson, Founder of Rainel</p>
-					</blockquote>
-					<img src="images/client-2.jpeg">
+			</section>
+			<section class="project-section" id="portfolio">
+				<hgroup>
+					<h2>latest project</h2>
+					<p>Proin iaculis purus consequat sem cure</p>
+				</hgroup>
+				<div class="project-content">
+					<div class="project-container">
+						<h3>developing a framework</h3>
+						<p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+						<div class="project-item">
+							<div class="project-item-img">
+								<img src="images/p-icon-bascet.png">
+							</div>
+							<div class="project-item-hp">
+								<h3>E-Commerce Ready</h3>
+								<p>Proin iaculis purus consequat sem cure digni ssim.</p>
+							</div>
+						</div>
+						<div class="project-item">
+							<div class="project-item-img">
+								<img src="images/p-icon-laptop.png">
+							</div>
+							<div class="project-item-hp">
+								<h3>Powerful SEO Features</h3>
+								<p>Proin iaculis purus consequat sem cure.</p>	
+							</div>			
+						</div>
+						<div class="project-item">
+							<div class="project-item-img">
+								<img src="images/p-icon-locked.png">
+							</div>
+							<div class="project-item-hp">
+								<h3>Secure Encryption</h3>
+								<p>Proin iaculis purus consequat sem cure iaculis purus.</p>
+							</div>
+						</div>
+						<p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
+						<button>view details <i class="fas fa-arrow-right"></i>
+						</button>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="next-project-section" id="contact">
-			<h2>ready to talk about your next project?</h2>
-			<button>contact us</button>
-		</section>
-		<section class="websites-section">
-			<img src="images/logo-env.png">
-			<img src="images/logo-wor.png">
-			<img src="images/logo-tut.png">
-			<img src="images/logo-mic.png">
-		</section>
-	</main>
-	<section class="footer-section sect-grid">
-		<div class="contact-container">
-			<h3>contact us</h3>
-			<li>
-				<img src="images/f-icon-loc.png">
-				<div class="contact-item">
-					<a href="https://goo.gl/maps/391wVd3cBh62" target="_blank">
-						55 Main St.</br>
-						Toronto, ON </br>
-						M1H 3A5</br>
-					</a>
+			</section>
+			<section class="culture-section sect-grid">
+				<hgroup>
+					<h2>culture & values</h2>
+					<p>Proin iaculis purus consequat cure.</p>
+				</hgroup>
+				<div class="culture-container">
+					<div class="culture-item">
+						<div class="culture-item-img">
+							<img src="images/icon-music.png">
+						</div>	
+						<h3>work-life balance</h3>
+						<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+					</div>
+					<div class="culture-item">
+						<div class="culture-item-img">
+							<img src="images/icon2-graph.png">
+						</div>	
+						<h3>quality over quantity</h3>
+						<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+					</div>
+					<div class="culture-item">
+						<div class="culture-item-img">
+							<img src="images/icon2-star.png">
+						</div>	
+						<h3>deliver excellence</h3>
+						<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+					</div>
 				</div>
-			</li>
-			<li>
-				<img src="images/f-icon-pho.png">
-				<a href="tel:4165555252">(416) 555-5252</a>
-			</li>			
-			<li>
-				<img src="images/f-icon-mail.png">
-				<a href="mailto:hello@treehouse.com">hello@treehouse.com</a>
-			</li>
-		</div>
-		<nav class="posts-container">
-			<h3>latest posts</h3>
-			<li>
-				<img src="images/f-icon-news.png">
-				<a href="#">made with love in toronto</a>
-			</li>			
-			<li>
-				<img src="images/f-icon-img.png">
-				<a href="#">startup news & emerging tech</a>
-			</li>			
-			<li>
-				<img src="images/f-icon-news.png">
-				<a href="#">bitcoin will soon rule</a>
-			</li>			
-			<li>
-				<img src="images/f-icon-news.png">
-				<a href="#">wearable technology on the rise</a>
-			</li>			
-			<li>
-				<img src="images/f-icon-media.png">
-				<a href="#">learn web design in 30 days!</a>
-			</li>					
-		</nav>
-		<nav class="tweets-container">
-			<h3>latest tweets</h3>	
-			<li>
-				<img src="images/f-icon-twit.png">
-				<div class="tweets-item">				
-					<a href="#">Confucius: Life is really simple, but we insist on making it complicated.</a>
-					<a href="https://twitter.com/hashtag/famousquotes?src=hash" target="_blank">
-						<s>#</s><b><strong>famousquotes</strong></b>
-					</a>
-					<p class="tweet-date">8 mins ago</p>
+			</section>
+			<section class="clients-section sect-grid">
+				<hgroup>
+					<h2>our awesome clients</h2>
+					<p>Proin iaculis purus consequat cure.</p>
+				</hgroup>
+				<div class="clients-container">			
+					<div class="clients-item">
+						<img src="images/client-1.jpeg">
+						<blockquote class="clients-opinion cli-1">
+							<p>" Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus. "</p>
+							<p class="cli-name">- Jamie Richardson, Founder of Cocoa Media</p>
+						</blockquote>
+					</div>
+					<div class="clients-item">
+						<blockquote class="clients-opinion cli-2">
+							<p>" Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus. "</p>
+							<p class="cli-name">- Kim Thompson, Founder of Rainel</p>
+						</blockquote>
+						<img src="images/client-2.jpeg">
+					</div>
 				</div>
-			</li>				
-			<li>
-				<img src="images/f-icon-twit.png">
-				<div class="tweets-item">				
-					<a href="#">Grab the Free Treehouse web template at FreebiesXpress!</a>
-					<div class="tweets-ht">
-						<a href="https://twitter.com/hashtag/freebies?src=hash" target="_blank">
-							<s>#</s><b><strong>freebies</strong></b>
-						</a>
-						<a href="https://twitter.com/hashtag/templates?src=hash" target="_blank">
-							<s>#</s><b><strong>templates</strong></b>
+			</section>
+			<section class="next-project-section" id="contact">
+				<h2>ready to talk about your next project?</h2>
+				<button>contact us</button>
+			</section>
+			<section class="websites-section">
+				<img src="images/logo-env.png">
+				<img src="images/logo-wor.png">
+				<img src="images/logo-tut.png">
+				<img src="images/logo-mic.png">
+			</section>
+		</main>
+		<section class="footer-section sect-grid">
+			<div class="contact-container">
+				<h3>contact us</h3>
+				<li>
+					<img src="images/f-icon-loc.png">
+					<div class="contact-item">
+						<a href="https://goo.gl/maps/391wVd3cBh62" target="_blank">
+							55 Main St.</br>
+							Toronto, ON </br>
+							M1H 3A5</br>
 						</a>
 					</div>
-					<p class="tweet-date">2 days ago</p>
-				</div>
-			</li>		
-		</nav>
-	</section>
-	<footer class="sect-grid">
-		<p class="copyright-container">
-			&copy; Copywright 2014 FreebiesXpress.com
-		</p>
-		<div class="social-container">
-			<a href="#"><img src="images/ff-icon-twit.png"></a>
-			<a href="#"><img src="images/ff-icon-fb.png"></a>
-			<a href="#"><img src="images/ff-icon-goo.png"></a>
-			<a href="#"><img src="images/ff-icon-pint.png"></a>
+				</li>
+				<li>
+					<img src="images/f-icon-pho.png">
+					<a href="tel:4165555252">(416) 555-5252</a>
+				</li>			
+				<li>
+					<img src="images/f-icon-mail.png">
+					<a href="mailto:hello@treehouse.com">hello@treehouse.com</a>
+				</li>
+			</div>
+			<nav class="posts-container">
+				<h3>latest posts</h3>
+				<li>
+					<img src="images/f-icon-news.png">
+					<a href="#">made with love in toronto</a>
+				</li>			
+				<li>
+					<img src="images/f-icon-img.png">
+					<a href="#">startup news & emerging tech</a>
+				</li>			
+				<li>
+					<img src="images/f-icon-news.png">
+					<a href="#">bitcoin will soon rule</a>
+				</li>			
+				<li>
+					<img src="images/f-icon-news.png">
+					<a href="#">wearable technology on the rise</a>
+				</li>			
+				<li>
+					<img src="images/f-icon-media.png">
+					<a href="#">learn web design in 30 days!</a>
+				</li>					
+			</nav>
+			<nav class="tweets-container">
+				<h3>latest tweets</h3>	
+				<li>
+					<img src="images/f-icon-twit.png">
+					<div class="tweets-item">				
+						<a href="#">Confucius: Life is really simple, but we insist on making it complicated.</a>
+						<a href="https://twitter.com/hashtag/famousquotes?src=hash" target="_blank">
+							<s>#</s><b><strong>famousquotes</strong></b>
+						</a>
+						<p class="tweet-date">8 mins ago</p>
+					</div>
+				</li>				
+				<li>
+					<img src="images/f-icon-twit.png">
+					<div class="tweets-item">				
+						<a href="#">Grab the Free Treehouse web template at FreebiesXpress!</a>
+						<div class="tweets-ht">
+							<a href="https://twitter.com/hashtag/freebies?src=hash" target="_blank">
+								<s>#</s><b><strong>freebies</strong></b>
+							</a>
+							<a href="https://twitter.com/hashtag/templates?src=hash" target="_blank">
+								<s>#</s><b><strong>templates</strong></b>
+							</a>
+						</div>
+						<p class="tweet-date">2 days ago</p>
+					</div>
+				</li>		
+			</nav>
+		</section>
+		<div id="back-top">
 		</div>
-	</footer>	
+		<footer class="sect-grid">
+			<p class="copyright-container">
+				&copy; Copywright 2014 FreebiesXpress.com
+			</p>
+			<div class="social-container">
+				<a href="#"><img src="images/ff-icon-twit.png"></a>
+				<a href="#"><img src="images/ff-icon-fb.png"></a>
+				<a href="#"><img src="images/ff-icon-goo.png"></a>
+				<a href="#"><img src="images/ff-icon-pint.png"></a>
+			</div>
+		</footer>
+	</div>	
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

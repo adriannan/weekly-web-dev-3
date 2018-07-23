@@ -5,23 +5,73 @@ body, html{
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    /*scroll-behavior: smooth;*/
     }
-
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
+/* window.pageYOffset is always 0 with overflow-x: hidden on body, html */
+.body-content{
+    overflow-x: hidden; 
+}
 /* *** HEADER SECTION *** */
 
 header{
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: auto 23% 23% 23% auto; 
+    justify-content: space-between;
+    width: 100%;
     height: 100px;
+    background-color: #fff;
     color: #707070;
     margin: 0 auto;
+}
+.fixed-naw1{
+    height: 0px;
+    overflow: hidden;
+
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    opacity: .8;
+    height: 50px;
+    transition: all .2s ease-out;
+}
+#back-top{
+    width: 50px;
+    height: 50px;
+    background-color: #1C1E20;
+    opacity: .8; 
+    position: fixed;
+    bottom: 1vw;
+    right: 1vw;
+    display: none;
+}
+#back-top:after{
+    position: absolute;
+    content: '';
+    z-index: 1;
+    right: 20%;
+    top: 0;
+    border: solid 15px transparent;
+    border-bottom-color: #F8F8F8; 
+}
+#back-top:before{
+    position: absolute;
+    content: '';
+    z-index: 2;
+    right: 20%;
+    top: 10%;
+    border: solid 15px transparent;
+    border-bottom-color: #1C1E20; 
+}
+#back-top:hover{
+    opacity: .2; 
+
 }
 
 header .logo-container{
@@ -32,7 +82,6 @@ header .logo-container{
     align-items: center;
 
 }
-
 header nav{
     display: flex;
     flex-direction: row;
@@ -45,7 +94,8 @@ header nav a:hover{
     color: #000;
 }
 header nav{
-}
+/*    align-self: flex-end;
+*/}
 header .logo-container, header nav{
     /*padding: 40px;*/
     /*font-size:;*/
@@ -55,7 +105,7 @@ header .logo{
     /*width: 100px;*/
     display: flex;
     align-items: center;
-    /*margin: auto 100px;*/
+    margin: auto 100px;
 }
 header .logo img{
     padding: 3px;
@@ -84,7 +134,9 @@ header nav a{
     align-items: center;
     padding: 30px 0px;
 }
-
+.baner-margin{
+        margin-top: 100px;
+}
 .baner-section h1{
     font-size: 60px;
     text-transform: uppercase; 
@@ -728,6 +780,7 @@ footer .social-container a:hover {
         justify-content: space-around;
     }
     .services-section{
+        padding-top: 15px;
         height: 450px;
         grid-template-rows: 33% 67%; 
     }
