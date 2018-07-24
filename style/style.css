@@ -28,7 +28,7 @@ header{
     color: #707070;
     margin: 0 auto;
 }
-.fixed-naw1{
+.fixed-nav1{
     height: 0px;
     overflow: hidden;
 
@@ -84,6 +84,7 @@ header{
     position: relative;
     transition: transform .2s ease-out;
     display: none;
+    cursor: pointer;
 }
 .hamburger::after, .hamburger::before{
     content: '';
@@ -99,12 +100,12 @@ header{
 .hamburger::after{
     transform: translateY(25px);
 }
-.hamburger:hover{
+.focus{
     transform: rotate(45deg) translateY(5px);
     border: none;
     transition: transform .15s ease-out;
 }
-.hamburger:hover:after{
+.focus:after{
     transform: rotate(-90deg) translateX(-10px);
     transition: transform .15s ease-out;
 }
@@ -887,8 +888,34 @@ footer .social-container a:hover {
 
 @media screen and (max-width: 768px) {
     header nav{
+        position: absolute;
         display: none;
+        flex-direction: column;
+        background-color: #fff;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+        transition: all .2s ease-out;
     }
+    header nav li{
+        height: 5vw;
+        width: 78%;
+        color: #707070;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        padding: 10px 30px;
+        margin-left: 3vw;
+        }    
+    header nav li:hover{
+        background-color: #f4f4f4;
+    }
+    header nav li a{
+        width: 100%;
+    }
+
     .hamburger{
         display: inline-block;
         align-self: center;
@@ -995,6 +1022,33 @@ footer .social-container a:hover {
         height: 60px;
         padding: 10px;
     }
+    header nav{
+        top: 60px;
+    }
+    header nav li{
+        padding: 10px 30px;
+    }  
+    .hamburger{
+        width: 25px;
+        height: 20px;
+        border-top: 3px solid #1C1E20;
+    }
+    .hamburger::before{
+        transform: translateY(5px);
+        border-top: 3px solid #1C1E20;
+    }
+    .hamburger::after{
+        transform: translateY(13px);
+        border-top: 3px solid #1C1E20;
+    }
+    .focus{
+        border: none;
+        transition: transform .15s ease-out;
+    }
+    .focus:after{
+        transform: rotate(-90deg) translateX(-5px);
+        transition: transform .15s ease-out;
+    }
     .baner-section {
         height: auto;
         width: 100%;
@@ -1025,7 +1079,7 @@ footer .social-container a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-                line-height: 2.3rem;
+        line-height: 2.3rem;
     }
     .services-section hgroup p, .relax-container hgroup p, .project-section hgroup p, .culture-section hgroup p, .clients-section hgroup p, .next-project-section hgroup p{
         font-size: 1.1rem;
