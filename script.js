@@ -76,17 +76,19 @@ var hamNav = document.getElementById('nav'),
 // open hamburger menu
 
 hamBut.addEventListener('click', function openHam(){
-	if (hamBut.classList.contains('focus') == false){
+	if (hamBut.classList.contains('focus') == false && navbar.classList.contains('fixed-nav') == false){
 		hamBut.classList.add('focus');
 		hamNav.style.display = 'flex';
-		} else {
+		} else if(hamBut.classList.contains('focus') == false && navbar.classList.contains('fixed-nav') == true){
+			hamNav.classList.add('expanded');
+			hamBut.classList.add('focus');
+			hamNav.style.display = 'flex';
+		} else{
 			hamBut.classList.remove('focus');
+			hamNav.classList.remove('expanded');
 			hamNav.style.display = 'none';
 		};
-})
-
-
-
+});
 
 
 
