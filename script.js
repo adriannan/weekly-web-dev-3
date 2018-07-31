@@ -1,3 +1,4 @@
+var nav = document.getElementById('nav');
 var navHome = document.getElementById('navHome');
 var navAbout = document.getElementById('navAbout');
 var navBlog = document.getElementById('navBlog');
@@ -87,6 +88,7 @@ hamBut.addEventListener('click', function openHam(){
 			hamBut.classList.remove('focus');
 			hamNav.classList.remove('expanded');
 			hamNav.style.display = 'none';
+			nav.style.display = 'flex';
 		};
 });
 
